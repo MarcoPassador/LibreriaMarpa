@@ -1,0 +1,21 @@
+.mainCon{
+    margin: 5%;
+}
+
+.btncon{
+    background-color: $color-principal;
+    border-color: $color-principal;
+}
+
+.btncon:hover{
+    background-color: #464D30;
+    border-color: #464D30;
+}
+
+.formFondo{
+    background-color: $color-secund;
+}
+
+.formSomb{
+    box-shadow: 7px 7px 4px 0 rgba(0,0,0,.2);
+}

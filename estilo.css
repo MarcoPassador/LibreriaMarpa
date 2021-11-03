@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    font-family: Roboto;
+    margin: 0;
+    padding: 0;
+}
+
+.bannerNav{
+    background-image: url(img/banner.png);
+    background-repeat: no-repeat;
+    width: auto;
+    height: 300px;
+    
+}
+
+.bannerNav h1{
+    text-align: center;
+    font-size: 50px;
+    color: #9AA27E;
+    text-shadow: 7px 7px rgba(0,0,0,.2);
+    font-weight: 700;
+}
+
+.logo{
+    width: 7%;
+}
+
+
+.nave{
+    background-color: #9AA27E;
+    margin: 0;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 1%;
+    padding: 5px;
+    box-shadow: 0 7px 4px 0 rgba(0,0,0,.2);
+     
+
+}
+.nave ul{
+    padding: 0;
+    margin: 0;
+}
+.nave ul li{
+    list-style: none;
+    font-size: 25px;
+    padding: 0;
+    
+}
+
+.nave a {
+    text-decoration: none;
+    color: black;
+}
+
+.nave a {
+    display: inline-block;
+    position: relative;
+    color: black;
+}
+
+.nave a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.nave a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.nave_list{
+    display: flex;
+    justify-content: space-around;
+}
+
+.mainIn{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-around
+    
+}
+
+.grupoLib{
+    background-color: #DFDFDF;
+    border-radius: 10px;
+    display: flex;
+    padding: 1%;
+    margin: 1%;
+    width: 40%;
+    height: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-shadow: 7px 7px 4px 0 rgba(0,0,0,.2);
+    
+}
+.grupoLib h2 {
+    font-size: 80%;
+    display: block;
+}
+
+.libArt{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1%;
+    margin: 2%;
+    background-color: white;
+    box-shadow: 7px 7px 4px 0 rgba(0,0,0,.2);
+}
+
+.libArt img{
+    width: 100px;
+    height: 150px;
+    border-radius: 5px ;
+}
+
+.libArt p {
+    font-weight: bold ;
+}
+.libArt {
+    color: black;
+    border-radius: 7px;
+    transition: transform 250ms cubic-bezier(.2,.8,.4,1);
+  }
+
+.libArt:hover {
+	transform: scale(1.10);
+  }
+
+.libArt:active {
+	transform: scale(0.9);
+}
+
+table th {
+    color: goldenrod;
+}
+
+.iconFoot img{
+    width: 30px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+}
+
+
+.mainTod{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grupTod{
+    background-color: #DFDFDF;
+    border-radius: 10px;
+    display: flex;
+    padding: 1%;
+    margin: 1%;
+    width: 70%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+.grupLoca{
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;   
+}
+
+.local{
+    display: flex;
+    flex-flow: row;
+    background-color: #DFDFDF;
+    border-radius: 5px;
+    box-shadow: 7px 7px 4px 0 rgba(0,0,0,.2);
+    width: 90%;
+    margin: 2%;
+    padding: 10px;
+}
+
+.local img{
+    border-radius: 5px;
+    box-shadow: 7px 7px 4px 0 rgba(0,0,0,.2);
+    height: 95%;
+    width: auto;
+}
+
+.locImg{
+   margin: 1%;
+}
+
+.titu{
+    text-align: center;
+}
+
+.locTit{
+    margin-bottom: 120px
+}
+
+.locText{
+    margin: 1%;
+}
+
+.mainCon{
+    margin: 5%;
+}
+
+.btncon{
+    background-color: #9AA27E;
+    border-color: #9AA27E;
+}
+
+.btncon:hover{
+    background-color: #464D30;
+    border-color: #464D30;
+}
+
+.formFondo{
+    background-color: #DFDFDF;
+}
+
+.formSomb{
+    box-shadow: 7px 7px 4px 0 rgba(0,0,0,.2);
+}
+
+@media only screen and  (max-width: 640px) {
+    .mainIn{
+        flex-flow: column;
+        /* align-items: center; */
+    }
+
+    .nav{
+        text-align: center;
+        
+    }
+    .nav_list{
+        flex-direction: column;
+    }
+
+    nav ul{
+        flex-direction: column;
+    }
+
+    nav li{
+        margin: 0.8em   ;
+    }
+    .grupoLib{
+        width: 100%;
+    }
+    
+}

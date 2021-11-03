@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import "base/variables";
+@import "base/extends";
+
+@import "components/header";
+@import "components/todos";
+@import "components/ofertas";
+@import "components/locales";
+@import "components/contacto";
+@import "components/footer";
+
+*{
+    font-family: Roboto;
+    margin: 0;
+    padding: 0;
+
+}
+
+.mainInicio{
+    @extend %flexRow;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    &_grupo{
+    background-color: $color-secund;
+    border-radius: 10px;
+    display: flex;
+    padding: 1%;
+    margin: 1%;
+    width: 40%;
+    height: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-shadow: 7px 7px 4px 0 rgba(0,0,0,.2);
+
+    h2{
+    font-size: 85%;
+    display: block;
+    }
+
+    }
+}
+
+
+.libArt{
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    border: 1px solid black;
+    width: 100px;
+    height: 210px;
+    @extend %flexColumn;
+    border-radius: 5px;
+    padding: 1%;
+    margin: 1%;
+    background-color: white;
+    box-shadow: 7px 7px 4px 0 rgba(0,0,0,.2);
+    color: black;
+    border-radius: 7px;
+    transition: transform 250ms cubic-bezier(.2,.8,.4,1);
+    p{
+        font-weight: bold ;
+        white-space: pre;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: 0;
+        
+    }
+    img{
+        width: 100px;
+        height: 150px;
+        border-radius: 5px ;
+        margin: 1%;
+    }
+   
+    &:hover{
+        transform: scale(1.10);
+
+    }
+    &:active {
+        transform: scale(0.9);
+    }
+
+    &_lib{
+    text-decoration: none;
+    }
+    &_ico{
+        position: absolute;
+        margin-left: 85px;
+    }
+
+    
+}
+
+.titu{
+    text-align: center;
+}
+
+
+@media only screen and  (max-width: 768px) {
+    .mainInicio{
+        flex-flow: column; 
+    }
+
+    .header_nave{
+        text-align: center;
+    }
+    .nav_list{
+        flex-direction: column;
+    }
+
+    nav ul{
+        flex-direction: column;
+    }
+
+    nav li{
+        margin: 0.8em   ;
+    }
+    .mainInicio_grupo{
+        width: 100%;
+    }
+    .mainLoca{
+        flex-flow: column;
+    }
+    .grupLoca_local{
+        flex-flow: column;
+    }
+    .locTit{
+        margin-bottom: 30px;
+    }
+
+    
+}
+@media only screen and  (max-width: 425px) {
+    .mainInicio{
+        flex-flow: column; 
+    }
+    .mainInicio_grupo{
+        flex-flow: column;
+        align-items: center;
+        
+    }
+    .header_banner{
+        height: 100px;
+        .header_banner_logo{
+            display: none;
+        }
+        h1{
+            font-size: 50px;
+            text-align: start;
+        }
+    }
+
+    
+    
+}

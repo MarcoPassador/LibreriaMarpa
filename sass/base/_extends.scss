@@ -1,0 +1,15 @@
+%flexRow{
+    display:  flex;
+    flex-direction: row;
+
+}
+%flexColumn{
+    display: flex;
+    flex-direction: column;
+}
+
+$colores:(
+    azul: #00aced,
+    violeta: #bc2a8d,
+    verde: #4dc247,
+);
