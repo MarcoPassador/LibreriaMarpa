@@ -1,0 +1,13 @@
+.main_error{
+    @extend %flexRow;
+    justify-content: center;
+    align-items:center;
+    align-content: center;
+}
+.error{
+    h1{
+        color: $color-principal;
+        text-align: center;
+    }
+
+}

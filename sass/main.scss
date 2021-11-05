@@ -8,6 +8,7 @@
 @import "components/locales";
 @import "components/contacto";
 @import "components/footer";
+@import "components/error";
 
 *{
     font-family: Roboto;
@@ -59,7 +60,7 @@
     color: black;
     border-radius: 7px;
     transition: transform 250ms cubic-bezier(.2,.8,.4,1);
-    p{
+    h4{
         font-weight: bold ;
         white-space: pre;
         overflow: hidden;
