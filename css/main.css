@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
-.grupLoca_local, footer .foot_cont, footer .foot_mid, footer .icons ul, .main_error, .mainInicio {
+.mainInicio, .grupLoca_local, footer .foot_cont, footer .foot_mid, footer .icons ul, .main_error {
   display: flex;
   flex-direction: row; }
 
-.grupLoca, .libArt {
+.libArt, .grupLoca {
   display: flex;
   flex-direction: column; }
 
@@ -78,6 +78,63 @@
     width: 70%;
     flex-wrap: wrap;
     justify-content: space-between; }
+
+.mainInicio {
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  .mainInicio_grupo {
+    background-color: #DFDFDF;
+    border-radius: 10px;
+    display: flex;
+    padding: 1%;
+    margin: 1%;
+    width: 40%;
+    height: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-shadow: 7px 7px 4px 0 rgba(0, 0, 0, 0.2); }
+    .mainInicio_grupo h2 {
+      font-size: 85%;
+      display: block; }
+
+.libArt {
+  border: 1px solid black;
+  width: 100px;
+  height: 210px;
+  border-radius: 5px;
+  padding: 1%;
+  margin: 1%;
+  background-color: white;
+  box-shadow: 7px 7px 4px 0 rgba(0, 0, 0, 0.2);
+  color: black;
+  border-radius: 7px;
+  transition: transform 250ms cubic-bezier(0.2, 0.8, 0.4, 1); }
+  .libArt a {
+    text-decoration: none;
+    color: black; }
+  .libArt h4 {
+    font-weight: bold;
+    white-space: pre;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0; }
+  .libArt img {
+    width: 100px;
+    height: 150px;
+    border-radius: 5px;
+    margin: 1%; }
+  .libArt:hover {
+    transform: scale(1.1); }
+  .libArt:active {
+    transform: scale(0.9); }
+  .libArt_lib {
+    text-decoration: none; }
+  .libArt_ico {
+    position: absolute;
+    margin-left: 85px; }
+
+.titu {
+  text-align: center; }
 
 .grupLoca {
   align-items: flex-start;
@@ -190,63 +247,6 @@ footer {
   font-family: Roboto;
   margin: 0;
   padding: 0; }
-
-.mainInicio {
-  flex-wrap: wrap;
-  justify-content: space-around; }
-  .mainInicio_grupo {
-    background-color: #DFDFDF;
-    border-radius: 10px;
-    display: flex;
-    padding: 1%;
-    margin: 1%;
-    width: 40%;
-    height: auto;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    box-shadow: 7px 7px 4px 0 rgba(0, 0, 0, 0.2); }
-    .mainInicio_grupo h2 {
-      font-size: 85%;
-      display: block; }
-
-.libArt {
-  border: 1px solid black;
-  width: 100px;
-  height: 210px;
-  border-radius: 5px;
-  padding: 1%;
-  margin: 1%;
-  background-color: white;
-  box-shadow: 7px 7px 4px 0 rgba(0, 0, 0, 0.2);
-  color: black;
-  border-radius: 7px;
-  transition: transform 250ms cubic-bezier(0.2, 0.8, 0.4, 1); }
-  .libArt a {
-    text-decoration: none;
-    color: black; }
-  .libArt h4 {
-    font-weight: bold;
-    white-space: pre;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    margin: 0; }
-  .libArt img {
-    width: 100px;
-    height: 150px;
-    border-radius: 5px;
-    margin: 1%; }
-  .libArt:hover {
-    transform: scale(1.1); }
-  .libArt:active {
-    transform: scale(0.9); }
-  .libArt_lib {
-    text-decoration: none; }
-  .libArt_ico {
-    position: absolute;
-    margin-left: 85px; }
-
-.titu {
-  text-align: center; }
 
 @media only screen and (max-width: 768px) {
   .mainInicio {

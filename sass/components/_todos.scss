@@ -17,3 +17,83 @@
 
 
 }
+
+.mainInicio{
+    @extend %flexRow;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    &_grupo{
+    background-color: $color-secund;
+    border-radius: 10px;
+    display: flex;
+    padding: 1%;
+    margin: 1%;
+    width: 40%;
+    height: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-shadow: 7px 7px 4px 0 rgba(0,0,0,.2);
+
+    h2{
+    font-size: 85%;
+    display: block;
+    }
+
+    }
+}
+
+.libArt{
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    border: 1px solid black;
+    width: 100px;
+    height: 210px;
+    @extend %flexColumn;
+    border-radius: 5px;
+    padding: 1%;
+    margin: 1%;
+    background-color: white;
+    box-shadow: 7px 7px 4px 0 rgba(0,0,0,.2);
+    color: black;
+    border-radius: 7px;
+    transition: transform 250ms cubic-bezier(.2,.8,.4,1);
+    h4{
+        font-weight: bold ;
+        white-space: pre;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: 0;
+        
+    }
+    img{
+        width: 100px;
+        height: 150px;
+        border-radius: 5px ;
+        margin: 1%;
+    }
+   
+    &:hover{
+        transform: scale(1.10);
+
+    }
+    &:active {
+        transform: scale(0.9);
+    }
+
+    &_lib{
+    text-decoration: none;
+    }
+    &_ico{
+        position: absolute;
+        margin-left: 85px;
+    }
+
+    
+}
+
+.titu{
+    text-align: center;
+}
