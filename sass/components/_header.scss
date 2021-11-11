@@ -1,20 +1,23 @@
 .header_banner{
     background-image:url(../img/banner.png);
     background-repeat: no-repeat;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center center;
     width: auto;
     height: 370px;
     h1{
     text-align: center;
-    font-size: 50px;
+    font-size: 80px;
     color: $color-principal;
-    text-shadow: 7px 7px rgba(0,0,0,.2);
+    text-shadow: 2px 2px rgba(0,0,0,.2);
     font-weight: 700;
     }
     
 }
 
 .header_banner_logo{
-    width: 7%;
+    height: 150px;
 }
 
 .header_nave{
