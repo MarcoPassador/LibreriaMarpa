@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
-.mainInicio, .grupLoca_local, footer .foot_cont, footer .foot_mid, footer .icons ul, .main_error {
+.mainInicio, .grupOfer_oferta, .grupLoca_local, footer .foot_cont, footer .foot_mid, footer .icons ul, .main_error {
   display: flex;
   flex-direction: row; }
 
-.libArt, .grupLoca {
+.libArt, .grupOfer, .grupLoca {
   display: flex;
   flex-direction: column; }
 
@@ -23,7 +23,8 @@
     font-weight: 700; }
 
 .header_banner_logo {
-  height: 150px; }
+  height: 120px;
+  margin: 10px; }
 
 .header_nave {
   background-color: #9AA27E;
@@ -136,6 +137,35 @@
 .titu {
   text-align: center; }
 
+.grupOfer {
+  align-items: flex-start;
+  flex-wrap: wrap; }
+  .grupOfer_oferta {
+    background-color: #DFDFDF;
+    border-radius: 5px;
+    box-shadow: 7px 7px 4px 0 rgba(0, 0, 0, 0.2);
+    width: 90%;
+    margin: 2%;
+    padding: 10px; }
+    .grupOfer_oferta img {
+      border-radius: 5px;
+      box-shadow: 7px 7px 4px 0 rgba(0, 0, 0, 0.2);
+      height: 180px;
+      width: 325px; }
+
+.oferImg {
+  width: 325px;
+  height: 190px; }
+
+.ofer_cont {
+  margin: 5px; }
+
+.oferTit {
+  margin-bottom: 100px; }
+
+.oferText {
+  margin: 1%; }
+
 .grupLoca {
   align-items: flex-start;
   flex-wrap: wrap; }
@@ -243,11 +273,6 @@ footer {
   color: #9AA27E;
   text-align: center; }
 
-* {
-  font-family: Roboto;
-  margin: 0;
-  padding: 0; }
-
 @media only screen and (max-width: 768px) {
   .mainInicio {
     flex-flow: column; }
@@ -263,8 +288,14 @@ footer {
     width: 100%; }
   .mainLoca {
     flex-flow: column; }
+  .mainOfer {
+    flex-flow: column; }
+  .grupOfer_oferta {
+    flex-flow: column; }
   .grupLoca_local {
     flex-flow: column; }
+  .oferTit {
+    margin-bottom: 30px; }
   .locTit {
     margin-bottom: 30px; } }
 
@@ -281,3 +312,12 @@ footer {
     .header_banner h1 {
       font-size: 50px;
       text-align: start; } }
+
+@media only screen and (max-width: 320px) {
+  .grupOfer_oferta {
+    width: 100%; } }
+
+* {
+  font-family: Roboto;
+  margin: 0;
+  padding: 0; }

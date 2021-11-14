@@ -1,0 +1,78 @@
+@media only screen and  (max-width: 768px) {
+    .mainInicio{
+        flex-flow: column; 
+    }
+
+    .header_nave{
+        text-align: center;
+    }
+    .nav_list{
+        flex-direction: column;
+    }
+
+    nav ul{
+        flex-direction: column;
+    }
+
+    nav li{
+        margin: 0.8em   ;
+    }
+    .mainInicio_grupo{
+        width: 100%;
+    }
+    .mainLoca{
+        flex-flow: column;
+    }
+
+    .mainOfer{
+        flex-flow: column;
+    }
+
+    .grupOfer_oferta{
+        flex-flow: column;
+
+    }
+
+    .grupLoca_local{
+        flex-flow: column;
+    }
+
+    .oferTit{
+        margin-bottom: 30px ;
+    }
+
+    .locTit{
+        margin-bottom: 30px;
+    }
+
+    
+}
+@media only screen and  (max-width: 425px) {
+    .mainInicio{
+        flex-flow: column; 
+    }
+    .mainInicio_grupo{
+        flex-flow: column;
+        align-items: center;
+        
+    }
+    .header_banner{
+        height: 100px;
+        .header_banner_logo{
+            display: none;
+        }
+        h1{
+            font-size: 50px;
+            text-align: start;
+        }
+    }
+
+    
+    
+}
+
+@media only screen and (max-width: 320px) {
+    .grupOfer_oferta{
+        width: 100%;
+    }
+}

@@ -1,0 +1,40 @@
+.grupOfer{
+    @extend %flexColumn;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    &_oferta{
+    @extend %flexRow;
+    background-color: #DFDFDF;
+    border-radius: 5px;
+    box-shadow: 7px 7px 4px 0 rgba(0,0,0,.2);
+    width: 90%;
+    margin: 2%;
+    padding: 10px;
+
+    img{
+    border-radius: 5px;
+    box-shadow: 7px 7px 4px 0 rgba(0,0,0,.2);
+    height: 180px;
+    width: 325px;
+    }
+
+    }  
+}
+
+.oferImg{
+    width: 325px;
+    height: 190px;
+ }
+ 
+ .ofer_cont{
+     margin: 5px;
+ }
+ 
+ .oferTit{
+     margin-bottom: 100px
+ }
+ 
+ .oferText{
+     margin: 1%;
+ }
