@@ -3,13 +3,36 @@
     flex-direction: row;
 
 }
+
 %flexColumn{
     display: flex;
     flex-direction: column;
 }
+
+%borde{
+    border-radius: 5px;
+    box-shadow: 7px 7px 4px 0 rgba(0,0,0,.2);
+
+}
+
+
 
 $colores:(
     azul: #00aced,
     violeta: #bc2a8d,
     verde: #4dc247,
 );
+
+
+@mixin footerCol ($bor, $box, $tran){
+    border: $bor;
+    box-shadow: $box;
+    transition: $tran;
+}
+
+@mixin footerSom ($col, $tex, $tran){
+    color: $col;
+    text-shadow: $tex;
+    transition: $tran;
+}
+

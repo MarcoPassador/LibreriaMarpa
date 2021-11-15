@@ -3,15 +3,18 @@
   display: flex;
   flex-direction: row; }
 
-.libArt, .grupOfer, .grupLoca {
+.mainTod, .libArt, .grupOfer, .grupLoca {
   display: flex;
   flex-direction: column; }
+
+.libArt, .grupOfer_oferta, .grupOfer_oferta img, .grupLoca_local, .grupLoca_local img {
+  border-radius: 5px;
+  box-shadow: 7px 7px 4px 0 rgba(0, 0, 0, 0.2); }
 
 .header_banner {
   background-image: url(../img/banner.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center center;
   width: auto;
   height: 370px; }
@@ -66,8 +69,6 @@
     justify-content: space-around; }
 
 .mainTod {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center; }
   .mainTod_grupo {
@@ -102,11 +103,9 @@
   border: 1px solid black;
   width: 100px;
   height: 210px;
-  border-radius: 5px;
   padding: 1%;
   margin: 1%;
   background-color: white;
-  box-shadow: 7px 7px 4px 0 rgba(0, 0, 0, 0.2);
   color: black;
   border-radius: 7px;
   transition: transform 250ms cubic-bezier(0.2, 0.8, 0.4, 1); }
@@ -142,14 +141,10 @@
   flex-wrap: wrap; }
   .grupOfer_oferta {
     background-color: #DFDFDF;
-    border-radius: 5px;
-    box-shadow: 7px 7px 4px 0 rgba(0, 0, 0, 0.2);
     width: 90%;
     margin: 2%;
     padding: 10px; }
     .grupOfer_oferta img {
-      border-radius: 5px;
-      box-shadow: 7px 7px 4px 0 rgba(0, 0, 0, 0.2);
       height: 180px;
       width: 325px; }
 
@@ -171,14 +166,10 @@
   flex-wrap: wrap; }
   .grupLoca_local {
     background-color: #DFDFDF;
-    border-radius: 5px;
-    box-shadow: 7px 7px 4px 0 rgba(0, 0, 0, 0.2);
     width: 90%;
     margin: 2%;
     padding: 10px; }
     .grupLoca_local img {
-      border-radius: 5px;
-      box-shadow: 7px 7px 4px 0 rgba(0, 0, 0, 0.2);
       height: 95%;
       width: auto; }
 

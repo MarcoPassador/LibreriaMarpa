@@ -6,15 +6,13 @@
     &_local{
     @extend %flexRow;
     background-color: #DFDFDF;
-    border-radius: 5px;
-    box-shadow: 7px 7px 4px 0 rgba(0,0,0,.2);
+    @extend %borde;
     width: 90%;
     margin: 2%;
     padding: 10px;
 
     img{
-    border-radius: 5px;
-    box-shadow: 7px 7px 4px 0 rgba(0,0,0,.2);
+    @extend %borde;
     height: 95%;
     width: auto;
     }

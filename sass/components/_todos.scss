@@ -1,6 +1,5 @@
 .mainTod{
-    display: flex;
-    flex-direction:column;
+    @extend %flexColumn;
     justify-content: center;
     align-items: center;
     &_grupo{
@@ -34,7 +33,6 @@
     justify-content: space-around;
     flex-wrap: wrap;
     box-shadow: 7px 7px 4px 0 rgba(0,0,0,.2);
-
     h2{
     font-size: 85%;
     display: block;
@@ -52,11 +50,10 @@
     width: 100px;
     height: 210px;
     @extend %flexColumn;
-    border-radius: 5px;
+    @extend %borde;
     padding: 1%;
     margin: 1%;
     background-color: white;
-    box-shadow: 7px 7px 4px 0 rgba(0,0,0,.2);
     color: black;
     border-radius: 7px;
     transition: transform 250ms cubic-bezier(.2,.8,.4,1);
