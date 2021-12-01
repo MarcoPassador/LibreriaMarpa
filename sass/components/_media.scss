@@ -60,6 +60,8 @@
 
             }
 
+            
+
     }
     
     .nav_list{
@@ -106,6 +108,26 @@
         display: flex;
     }
 
+    .mainLib{
+        flex-flow: column;
+        margin: 1% 15%;
+
+        &_div1{
+            align-content: center;
+            justify-items: center;
+        }
+        
+        
+        img{
+            height: 200px;
+            text-align: center;
+        }
+
+        .punt{
+            display: none;
+        }
+    }
+
     
 }
 @media only screen and  (max-width: 425px) {
@@ -127,6 +149,8 @@
             text-align: start;
         }
     }
+
+    
     
 
     

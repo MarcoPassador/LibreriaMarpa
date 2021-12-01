@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
-.mainInicio, .grupOfer_oferta, .grupLoca_local, footer .foot_cont, footer .foot_mid, footer .icons ul, .main_error {
+.mainLib, .mainInicio, .grupOfer_oferta, .grupLoca_local, footer .foot_cont, footer .foot_mid, footer .icons ul, .main_error {
   display: flex;
   flex-direction: row; }
 
@@ -7,7 +7,7 @@
   display: flex;
   flex-direction: column; }
 
-.libArt, .grupOfer_oferta, .grupOfer_oferta img, .grupLoca_local, .grupLoca_local img {
+.mainLib, .mainLib img, .libArt, .grupOfer_oferta, .grupOfer_oferta img, .grupLoca_local, .grupLoca_local img {
   border-radius: 5px;
   box-shadow: 7px 7px 4px 0 rgba(0, 0, 0, 0.2); }
 
@@ -80,6 +80,48 @@
   .header_nave_list {
     display: flex;
     justify-content: space-around; }
+
+.mainLib {
+  background-color: #DFDFDF;
+  border-radius: 10px;
+  margin: 1% 20%;
+  padding: 1%; }
+  .mainLib img {
+    height: 350px;
+    width: auto;
+    margin: 20px; }
+  .mainLib_div2_div {
+    margin-top: 20px; }
+  .mainLib_div2_div2 {
+    margin-top: 50px; }
+
+.star-wrapper {
+  position: relative;
+  direction: ltr; }
+  .star-wrapper a {
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.5s;
+    margin: 4px; }
+    .star-wrapper a:hover {
+      color: #9AA27E;
+      transform: scale(1.3); }
+
+.s1:hover ~ a {
+  color: #9AA27E; }
+
+.s2:hover ~ a {
+  color: #9AA27E; }
+
+.s3:hover ~ a {
+  color: #9AA27E; }
+
+.s4:hover ~ a {
+  color: #9AA27E; }
+
+.s5:hover ~ a {
+  color: #9AA27E; }
 
 .mainTod {
   justify-content: center;
@@ -342,7 +384,18 @@ footer {
   .locTit {
     margin-bottom: 30px; }
   .menu {
-    display: flex; } }
+    display: flex; }
+  .mainLib {
+    flex-flow: column;
+    margin: 1% 15%; }
+    .mainLib_div1 {
+      align-content: center;
+      justify-items: center; }
+    .mainLib img {
+      height: 200px;
+      text-align: center; }
+    .mainLib .punt {
+      display: none; } }
 
 @media only screen and (max-width: 425px) {
   .mainInicio {
