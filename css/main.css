@@ -11,6 +11,16 @@
   border-radius: 5px;
   box-shadow: 7px 7px 4px 0 rgba(0, 0, 0, 0.2); }
 
+* {
+  font-family: Roboto;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: none; }
+  * label {
+    display: inline; }
+
 .header_banner {
   background-image: url(../img/banner.png);
   background-repeat: no-repeat;
@@ -44,6 +54,9 @@
       list-style: none;
       font-size: 25px;
       padding: 0; }
+    .header_nave ul .active {
+      font-style: italic;
+      font-weight: 600; }
   .header_nave a {
     text-decoration: none;
     color: black;
@@ -216,6 +229,9 @@ footer {
     justify-content: center;
     align-items: center;
     margin-left: 7%; }
+    footer .foot_mid a {
+      text-decoration: underline;
+      color: white; }
   footer .icons ul {
     list-style: none; }
     footer .icons ul li {
@@ -268,7 +284,42 @@ footer {
   .mainInicio {
     flex-flow: column; }
   .header_nave {
-    text-align: center; }
+    text-align: start;
+    width: 96%;
+    margin: 9px; }
+    .header_nave label {
+      display: flex;
+      flex-direction: column;
+      width: 70px;
+      cursor: pointer; }
+      .header_nave label span {
+        background: #fff;
+        border-radius: 10px;
+        height: 7px;
+        margin: 7px 0;
+        transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6); }
+        .header_nave label span:nth-of-type(1) {
+          width: 50%; }
+        .header_nave label span:nth-of-type(2) {
+          width: 100%; }
+        .header_nave label span:nth-of-type(3) {
+          width: 75%; }
+      .header_nave label ul {
+        display: none; }
+      .header_nave label input {
+        display: none; }
+        .header_nave label input:checked ~ span:nth-of-type(1) {
+          transform-origin: bottom;
+          transform: rotatez(45deg) translate(8px, 0px); }
+        .header_nave label input:checked ~ span:nth-of-type(2) {
+          transform-origin: top;
+          transform: rotatez(-45deg); }
+        .header_nave label input:checked ~ span:nth-of-type(3) {
+          transform-origin: bottom;
+          width: 50%;
+          transform: translate(30px, -11px) rotatez(45deg); }
+        .header_nave label input:checked ~ ul {
+          display: block; }
   .nav_list {
     flex-direction: column; }
   nav ul {
@@ -276,7 +327,8 @@ footer {
   nav li {
     margin: 0.8em; }
   .mainInicio_grupo {
-    width: 100%; }
+    width: 96%;
+    margin: 9px; }
   .mainLoca {
     flex-flow: column; }
   .mainOfer {
@@ -288,7 +340,9 @@ footer {
   .oferTit {
     margin-bottom: 30px; }
   .locTit {
-    margin-bottom: 30px; } }
+    margin-bottom: 30px; }
+  .menu {
+    display: flex; } }
 
 @media only screen and (max-width: 425px) {
   .mainInicio {
@@ -306,9 +360,15 @@ footer {
 
 @media only screen and (max-width: 320px) {
   .grupOfer_oferta {
-    width: 100%; } }
+    width: 100%; }
+  footer {
+    width: 100%; }
+    footer .icons ul li {
+      width: 20px;
+      height: 20px; }
+  .mainInicio_grupo {
+    margin: 0; } }
 
-* {
-  font-family: Roboto;
-  margin: 0;
-  padding: 0; }
+@media only screen and (max-width: 2560px) {
+  .header_nave input {
+    display: none; } }

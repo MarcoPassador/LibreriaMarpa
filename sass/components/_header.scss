@@ -1,3 +1,16 @@
+*{
+    font-family: Roboto;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: none;
+    label {
+        display: inline;
+    }
+
+}
+
 .header_banner{
     background-image:url(../img/banner.png);
     background-repeat: no-repeat;
@@ -37,6 +50,10 @@
     padding: 0;
 
     }
+    .active{
+        font-style: italic;
+        font-weight: 600;
+    }
 
     }
 
@@ -72,3 +89,4 @@
 
     }
 }
+

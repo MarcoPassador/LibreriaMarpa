@@ -4,8 +4,64 @@
     }
 
     .header_nave{
-        text-align: center;
+        text-align:start;
+        width: 96%;
+        margin: 9px;
+        label{
+            display:flex;
+             flex-direction:column;
+             width:70px;
+             cursor:pointer;
+             span{
+                 background: #fff;
+                 border-radius:10px;
+                 height:7px;
+                 margin: 7px 0;
+                 transition: .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
+                 &:nth-of-type(1){
+                     width:50%;
+                 }
+                 &:nth-of-type(2){
+                     width:100%;
+                 }
+                 &:nth-of-type(3){
+                    width:75%;
+                 }
+                 
+                }
+
+                ul{
+                 display: none;
+                }
+                
+                input{
+                  display:none;
+                  &:checked ~ span:nth-of-type(1){
+                    transform-origin:bottom;
+                    transform:rotatez(45deg) translate(8px,0px)
+                  }
+
+                  &:checked ~ span:nth-of-type(2){
+                    transform-origin:top;
+                    transform:rotatez(-45deg)
+                  }
+
+                  &:checked ~ span:nth-of-type(3){ 
+                    transform-origin:bottom;
+                    width:50%;
+                    transform: translate(30px,-11px) rotatez(45deg);
+                  }
+
+                  &:checked ~ ul{
+                    display: block;
+                }
+
+                }
+
+            }
+
     }
+    
     .nav_list{
         flex-direction: column;
     }
@@ -18,7 +74,8 @@
         margin: 0.8em   ;
     }
     .mainInicio_grupo{
-        width: 100%;
+        width: 96%;
+        margin: 9px;
     }
     .mainLoca{
         flex-flow: column;
@@ -45,6 +102,10 @@
         margin-bottom: 30px;
     }
 
+    .menu{
+        display: flex;
+    }
+
     
 }
 @media only screen and  (max-width: 425px) {
@@ -66,6 +127,7 @@
             text-align: start;
         }
     }
+    
 
     
     
@@ -74,5 +136,30 @@
 @media only screen and (max-width: 320px) {
     .grupOfer_oferta{
         width: 100%;
+    }
+
+    footer{
+        width: 100%;
+
+        .icons ul li{
+            width: 20px;
+            height: 20px;
+        }
+
+    }
+
+    .mainInicio_grupo{
+        margin: 0;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 2560px){
+    .header_nave{
+        input{
+            display: none;
+        }
     }
 }
