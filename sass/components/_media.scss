@@ -1,12 +1,23 @@
 @media only screen and  (max-width: 768px) {
     .mainInicio{
-        flex-flow: column; 
+        flex-flow: column;
+        &_grupo{
+            .grupo_titu{
+                text-align: center;
+            }
+            .grupo_libs{
+                display: flex;
+                justify-content: space-around;
+                
+            }
+
+        }
     }
 
     .header_nave{
         text-align:start;
         width: 96%;
-        margin: 9px;
+        margin: 5px;
         label{
             display:flex;
              flex-direction:column;
@@ -54,6 +65,7 @@
 
                   &:checked ~ ul{
                     display: block;
+                    text-align: center;
                 }
 
                 }
@@ -77,7 +89,7 @@
     }
     .mainInicio_grupo{
         width: 96%;
-        margin: 9px;
+        margin: 5px;
     }
     .mainLoca{
         flex-flow: column;
@@ -137,6 +149,8 @@
     .mainInicio_grupo{
         flex-flow: column;
         align-items: center;
+        margin: 10px 0;
+        padding: 1%;
         
     }
     .header_banner{
@@ -146,20 +160,31 @@
         }
         h1{
             font-size: 50px;
-            text-align: start;
+            text-align: center;
         }
     }
 
-    
-    
+    .mainTod_grupo{
+        width: 100%;
+        margin: 15px 0;
+    }
 
-    
-    
+
+
+}
+
+@media only screen and (max-width: 375px){
+    footer{
+        .icons ul li{
+            width: 30px;
+        }
+    }
 }
 
 @media only screen and (max-width: 320px) {
     .grupOfer_oferta{
-        width: 100%;
+        // width: 100%;
+        zoom: 0.8;
     }
 
     footer{
@@ -173,14 +198,19 @@
     }
 
     .mainInicio_grupo{
-        margin: 0;
+        margin: 20px 0;
+        .libArt{
+            zoom: 0.8;
+        }
     }
 
     .header_nave{
         width: auto;
     }
 
-
+    .mainTod_grupo{
+        justify-content: space-around;
+    }
 
 }
 

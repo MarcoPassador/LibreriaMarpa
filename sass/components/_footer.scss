@@ -44,42 +44,29 @@ footer{
 
                 &:hover .twitter{
                     @include footerCol (5px solid map-get($colores , azul), 0 0 15px map-get($colores , azul), all 0.5s ease);
-                    // border: 5px solid map-get($colores , azul);
-                    // box-shadow: 0 0 15px map-get($colores , azul);
-                    // transition: all 0.5s ease;
+                    
                 }
 
                 &:hover .fa-twitter{
                     @include footerSom (map-get($colores , azul), 0 0 15px map-get($colores , azul), all 0.5s ease);
-                    // color: map-get($colores , azul);
-                    // text-shadow: 0 0 15px map-get($colores , azul);
-                    // transition: all 0.5s ease;
+                    
                 }
 
                 &:hover .instagram{
                     @include footerCol(5px solid map-get($colores , violeta), 0 0 15px map-get($colores , violeta), all 0.5s ease);
-                    // border: 5px solid map-get($colores , violeta);
-                    // box-shadow: 0 0 15px map-get($colores , violeta);
-                    // transition: all 0.5s ease;
+                    
                 }
 
                 &:hover .fa-instagram{
                     @include footerSom(map-get($colores , violeta), 0 0 15px map-get($colores , violeta), all 0.5s ease);
-                    // color: map-get($colores , violeta);
-                    // text-shadow: 0 0 15px map-get($colores , violeta);
-                    // transition: all 0.5s ease;
                 }
                 &:hover .whatsapp{
                     @include footerCol(5px solid map-get($colores , verde), 0 0 15px map-get($colores , verde), all 0.5s ease);
-                    // border: 5px solid map-get($colores , verde);
-                    // box-shadow: 0 0 15px map-get($colores , verde);
-                    // transition: all 0.5s ease;
+                    
                 }
                 &:hover .fa-whatsapp{
                     @include footerSom(map-get($colores, verde), 0 0 15px map-get($colores , verde), all 0.5s ease);
-                    // color: map-get($colores, verde);
-                    // text-shadow: 0 0 15px map-get($colores , verde);
-                    // transition: all 0.5s ease;
+                    
                 }
             }
         }

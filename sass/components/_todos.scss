@@ -26,6 +26,7 @@
     background-color: $color-secund;
     border-radius: 10px;
     display: flex;
+    flex-direction: row;
     padding: 1%;
     margin: 1%;
     width: 40%;
@@ -33,10 +34,14 @@
     justify-content: space-around;
     flex-wrap: wrap;
     box-shadow: 7px 7px 4px 0 rgba(0,0,0,.2);
-    h2{
-    font-size: 85%;
-    display: block;
-    }
+        h2{
+            font-size: 85%;
+            display: block;
+        }
+        .grupo_libs{
+            display: flex;
+            flex-direction: row;
+        }
 
     }
 }
@@ -81,7 +86,7 @@
     }
 
     &_lib{
-    text-decoration: none;
+        text-decoration: none;
     }
     &_ico{
         position: absolute;

@@ -143,6 +143,7 @@
     background-color: #DFDFDF;
     border-radius: 10px;
     display: flex;
+    flex-direction: row;
     padding: 1%;
     margin: 1%;
     width: 40%;
@@ -153,6 +154,9 @@
     .mainInicio_grupo h2 {
       font-size: 85%;
       display: block; }
+    .mainInicio_grupo .grupo_libs {
+      display: flex;
+      flex-direction: row; }
 
 .libArt {
   border: 1px solid black;
@@ -325,10 +329,15 @@ footer {
 @media only screen and (max-width: 768px) {
   .mainInicio {
     flex-flow: column; }
+    .mainInicio_grupo .grupo_titu {
+      text-align: center; }
+    .mainInicio_grupo .grupo_libs {
+      display: flex;
+      justify-content: space-around; }
   .header_nave {
     text-align: start;
     width: 96%;
-    margin: 9px; }
+    margin: 5px; }
     .header_nave label {
       display: flex;
       flex-direction: column;
@@ -361,7 +370,8 @@ footer {
           width: 50%;
           transform: translate(30px, -11px) rotatez(45deg); }
         .header_nave label input:checked ~ ul {
-          display: block; }
+          display: block;
+          text-align: center; }
   .nav_list {
     flex-direction: column; }
   nav ul {
@@ -370,7 +380,7 @@ footer {
     margin: 0.8em; }
   .mainInicio_grupo {
     width: 96%;
-    margin: 9px; }
+    margin: 5px; }
   .mainLoca {
     flex-flow: column; }
   .mainOfer {
@@ -402,27 +412,40 @@ footer {
     flex-flow: column; }
   .mainInicio_grupo {
     flex-flow: column;
-    align-items: center; }
+    align-items: center;
+    margin: 10px 0;
+    padding: 1%; }
   .header_banner {
     height: 100px; }
     .header_banner .header_banner_logo {
       display: none; }
     .header_banner h1 {
       font-size: 50px;
-      text-align: start; } }
+      text-align: center; }
+  .mainTod_grupo {
+    width: 100%;
+    margin: 15px 0; } }
+
+@media only screen and (max-width: 375px) {
+  footer .icons ul li {
+    width: 30px; } }
 
 @media only screen and (max-width: 320px) {
   .grupOfer_oferta {
-    width: 100%; }
+    zoom: 0.8; }
   footer {
     width: 100%; }
     footer .icons ul li {
       width: 15px;
       height: 15px; }
   .mainInicio_grupo {
-    margin: 0; }
+    margin: 20px 0; }
+    .mainInicio_grupo .libArt {
+      zoom: 0.8; }
   .header_nave {
-    width: auto; } }
+    width: auto; }
+  .mainTod_grupo {
+    justify-content: space-around; } }
 
 @media only screen and (max-width: 2560px) {
   .header_nave input {
